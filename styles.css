@@ -79,7 +79,7 @@ header.sticky ul li a{
 }
 .section3{
     background: red;
-    height:2000px;
+    height:1000px;
 }
 
 .parallax{
@@ -90,21 +90,6 @@ header.sticky ul li a{
         repeat fixed 50% center;
     display:flex;
     align-items:center;
-}
-
-.apar{
-    font-weight: 700;
-    font-size:60px;
-    text-align: center;
-    position:relative;
-    opacity: 0;
-    top:40px;
-    transition:0.6s;
-}
-
-.apar.chegou{
-    opacity: 1;
-    top:0px;
 }
 
 .section1{
@@ -238,4 +223,24 @@ header.sticky ul li a{
 }
 .js.scrolled{
     width:35%;
+}
+
+.parallax2{
+    margin:0;
+    padding:0;
+    height:100%;
+    background: url("https://wallpapercave.com/wp/wp5204110.jpg")
+        repeat fixed 50% center;
+}
+
+.section3{
+    text-align:center;
+}
+
+
+.parallax2 h1{
+    font-size: 80px;
+    text-align:center;
+
+    text-transform: uppercase;
 }

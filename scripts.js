@@ -27,15 +27,12 @@ $(document).ready(function(){
 
 window.addEventListener("scroll", function(){
     var header = document.querySelector("header");
-    var section3 = document.querySelector(".apar");
     var nomeSection = document.querySelector(".section1");
     var parallax = document.querySelector(".parallax");
     var positionParallax = parallax.getBoundingClientRect();
-    var position = section3.getBoundingClientRect();
 
 
     header.classList.toggle("sticky", window.scrollY > 0);
-    section3.classList.toggle("chegou", window.scrollY > position.top);
     nomeSection.classList.toggle("appear", window.scrollY < 700);
 
     var html = document.querySelector(".html");
