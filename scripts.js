@@ -29,6 +29,7 @@ window.addEventListener("scroll", function(){
     var header = document.querySelector("header");
     var nomeSection = document.querySelector(".section1");
     var parallax = document.querySelector(".parallax");
+    var process = document.querySelector(".animationSection3");
     var positionParallax = parallax.getBoundingClientRect();
 
 
@@ -54,4 +55,10 @@ window.addEventListener("scroll", function(){
     var section2 = document.querySelector("#section2");   
     var positionSection2 = section2.getBoundingClientRect();
     skills.classList.toggle("scrolled", window.scrollY >= positionSection2.top );
+
+    var positionProcess = process.getBoundingClientRect();
+    process.classList.toggle("scrolled", window.scrollY + 200 >= positionProcess.top);
 })
+
+                
+
