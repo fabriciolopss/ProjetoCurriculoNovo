@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    background: transparent;
+    opacity:0.8;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    transition: 0.6s;
+    padding: 25px 100px;
+    z-index:10;
+}
+
+header.sticky{
+    padding:5px 100px;
+    background-color: white;
+}
+
+header .logo{
+    position:relative;
+    font-weight: 700;
+    color: white;
+    text-decoration:none;
+    font-size: 60px;
+    letter-spacing: 3px;
+    transition:0.8s;
+}
+
+header.sticky .logo{
+    color:black;
+}
+
+header ul{
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+header ul li{
+    position:relative;
+    list-style: none;
+}
+
+header ul li a{
+    color: white;
+    position:relative;
+    margin: 0 15px;
+    text-decoration: none;
+    letter-spacing:3px;
+    transition: 0.8s;
+}
+
+header.sticky ul li a{
+    color: black;
+}
+
+.section1{
+    background: #524A4E;
+    height:1000px;
+}
+.section2{
+    background: white;
+    height:1000px;
+}
+.section3{
+    background: red;
+    height:2000px;
+}
+
+.parallax{
+    margin:0;
+    padding:0;
+    height:100%;
+    background: url("https://wallpapercave.com/wp/wp9066628.jpg")
+        repeat fixed 50% center;
+    display:flex;
+    align-items:center;
+}
+
+.apar{
+    font-weight: 700;
+    font-size:60px;
+    text-align: center;
+    position:relative;
+    opacity: 0;
+    top:40px;
+    transition:0.6s;
+}
+
+.apar.chegou{
+    opacity: 1;
+    top:0px;
+}
+
+.section1{
+    text-align:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction: column;
+}
+.section1 h1{
+    position:relative;
+    opacity:0;
+    top:200px;
+    font-weight: 700;
+    transform:scale(0);
+    transition:0.6s;
+    
+}
+
+#nomeSection1:hover{
+    transform:scale(1.2);
+}
+
+#cargoSection1:hover{
+    transform:scale(1.2);
+    color:green;
+}
+
+
+.section1.appear h1{
+    opacity:1;
+    top:0px;
+    transform: scale(1);
+}
+
+#nomeSection1{
+    font-size: 50px;
+    color:white;
+}
+
+
+#cargoSection1{
+    display:inline-block;
+    text-decoration: none;
+    color:black;
+    cursor:pointer;
+    transition:0.6s;
+}
+
+.skills{
+    position:relative;
+    top: 30px;
+    opacity:0;
+    width:500px;
+    margin: 0px auto;
+    color:white;
+    transition: 1s;
+}
+
+.skills.scrolled{
+    top:0px;
+    opacity: 1;
+}
+
+.skills li{
+    list-style-type: none;
+    margin:20px 0;
+}
+
+.skills h1{
+    padding-top: auto;
+    text-align: center;
+    text-transform:uppercase;
+    font-size:40px;
+}
+.bar{
+    background: black;
+    display: block;
+    height: 20px;
+    border: 2px solid rgba(133, 248, 133, 0.8);
+    border-radius:8px;
+    overflow:hidden;
+    box-shadow: 0 0 10px green;
+}
+
+.bar span{
+    height: 20px;
+    float:left;
+    background: green;
+}
+
+.html{
+    width: 0%;
+    transition: 0.6s;
+}
+
+.html.scrolled{
+    width:60%;
+}
+
+.python{
+    width: 0%;
+    transition: 1s;
+}
+
+.python.scrolled{
+    width:70%;
+}
+
+
+.c{
+    width: 0%;
+    transition: 1.5s;
+}
+.c.scrolled{
+    width:80%;
+}
+
+.video{
+    width: 0%;
+    transition: 2s;
+
+}
+.video.scrolled{
+    width:90%;
+}
+
+.js{
+    width: 0%;
+    transition: 2.3s;
+}
+.js.scrolled{
+    width:35%;
+}
