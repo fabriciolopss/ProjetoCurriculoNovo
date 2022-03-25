@@ -23,7 +23,7 @@
 
     <div class = "section1" id = "section1">
         <h1 id ="nomeSection1">FABRICIO ROCHA LOPES</h1>
-        <h1><a href = "#section2" id = "cargoSection1">FULLSTACK DEVELOPER</a></h1>
+        <h1><a href = "#section2" id = "cargoSection1">FULLSTACK DEVELOPER & <br> VIDEO EDITOR</a></h1>
 
 
     </div>
@@ -185,10 +185,50 @@
 
  
                 </script>
+            </section>
         </section>
-    </section>
-        
-
     </div>
+    <div class="container2">
+        <div class = "box box1">
+            <video id = "video1" src = "images/videoProgramacaoPortifolio.mp4" autoplay loop muted></video>
+            <div class = "content">
+                <h2>PROJETOS DE PROGRAMAÇÃO <br> MOSTRANDO UM EXEMPLO</h2>
+            </div>
+        </div>
+
+        <div class = "box box2">
+            <video id = "video2" src = "images/café.mp4" autoplay loop muted></video>
+            <div class = "content">
+                <h2>EXEMPLO DE VIDEO QUE EU PRODUZI</h2>
+            </div>
+        </div>
+
+        <div class = "box box3">
+            <video id = "video3" src = "images/videoProgramacao2Portifolio.mp4" autoplay loop muted volume = 0></video>
+            <div class = "content">
+                <h2>RESOLVENDO QUESTÃO DA OBI 2021</h2>
+            </div>
+        </div>
+    </div>
+    <script>
+        let box = document.querySelectorAll('.box');
+        box.forEach(popup => popup.addEventListener('click', () => {
+            popup.classList.toggle('active');
+
+        }))
+
+        $(".box2").click(function(){
+            $("#video2").prop("muted", !$("#video2").prop("muted"));
+        });
+
+        $(".box1").click(function(){
+            $("#video1").prop("muted", !$("#video1").prop("muted"));
+        });
+  
+        $(".box3").click(function(){
+            $("#video3").prop("muted", !$("#video3").prop("muted"));
+        });
+
+    </script>
 </body>
 </html>

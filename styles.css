@@ -22,7 +22,7 @@ header{
     align-items:center;
     transition: 0.6s;
     padding: 25px 100px;
-    z-index:10;
+    z-index:100000;
 }
 
 header.sticky{
@@ -425,3 +425,80 @@ header.sticky ul li a{
     transform: translateY(0px);
 }
 
+.container2{
+    position:relative;
+    top:0;
+    left:0;
+    width:100%;
+    height:100vh;
+    background: url("https://wallpapercave.com/wp/wp7528738.jpg")
+        repeat fixed 50% center;
+    overflow:hidden;
+}
+
+.container2 .box{
+    position:absolute;
+    width:100%;
+    height:100vh;
+    cursor: pointer;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    transition: all ease 1s;
+}
+
+
+
+.container2 .box:hover{
+    transform:scale(1.02);
+    z-index:1000;
+}
+
+.container2 .box.box1{
+    background:red;
+    clip-path: polygon(0 0, 33% 0, 33% 100%, 0% 100%);
+    transition: 1s;
+}
+.container2 .box.box2{
+    background:green;
+    border-left: 1px solid red;
+    clip-path: polygon(33% 0, 67% 0, 67% 100%, 33% 100%);
+}
+
+.container2 .box.box3{
+    background:blue;
+    clip-path: polygon(67% 0, 100% 0, 100% 100%, 67% 100%);
+}
+
+.container2 .box.active{
+    opacity:1; 
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.container2 .content{
+    padding:20px;
+    margin:20px;
+    z-index:10;
+    opacity:0;
+    transition: 1s;
+}
+
+.container2 .box.active .content{
+    opacity:1;
+}
+
+.container2 .content h2{
+    color: #fff;
+    font-size: 6vw;
+    text-align:center;
+    font-weight: initial;
+}
+
+.container2 .box video{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
